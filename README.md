@@ -1,46 +1,65 @@
+<h1 align="center">
+  🌾 Manufac Assignment - Indian Agriculture Analytics
+</h1>
 
-# Manufac Assignment
-
-## Problem Statement
-We are expected to perform some analytics over the [Indian agriculture dataset](https://drive.google.com/file/d/1p1UW__9DvRuscA01kUFTMz_CUMKvTbyM/view) (made available by [National Data and Analytics Platform](https://ndap.niti.gov.in/info?tab=about), NITI Aayog) and then display them as tables. 
-
-## Demo 
-
-View Live Application Here: https://manufac-assignment-red.vercel.app/
-
-Fork and run this application using below command: 
-
-```
-yarn install
-yarn dev
-```
+---
 
 ## Overview
- 
-It is a web app that processes the given crop data and displays `Crop with Maximum & Minimum Production in that Year` & `Average Yield & Average Cultivation Area of the Crop between 1950-2020`.
 
-## Screenshots
+The **Manufac Assignment** is a data analytics application that processes crop data from the **Indian Agriculture Dataset** (provided by NITI Aayog, Government of India). The app displays important analytics in a dashboard format, helping users analyze key metrics like crop production, yield, and cultivation areas from 1950 to 2020.
 
-### Crop with Maximum & Minimum Production in that Year
-![Screenshot (12)](https://github.com/user-attachments/assets/c9fb6d1b-cdb4-4ae9-91fa-bafc057b2377)
+---
 
-### Average Yield & Average Cultivation Area of the Crop between 1950-2020
-![Screenshot (13)](https://github.com/user-attachments/assets/5b9841ad-79fd-42dd-90bb-11fbc2bac0d8)
+## Application Features
 
-## Features
+- **Data Analytics**:
+  - Displays two key analytics in a user-friendly table format:
+    - **Crop with Maximum & Minimum Production per Year** (1950-2020).
+    - **Average Yield & Average Cultivation Area per Crop** (1950-2020).
+  
+- **User Interface**:
+  - Clean and responsive UI built with **React.js** and **Mantine** for modern table layouts and tab navigation.
+  - Smooth transitions between tables using **Mantine Tabs** and **scrolling functionality** via Mantine's `useScrollIntoView` hook.
+  
+- **Performance Optimization**:
+  - **Lazy loading** for efficient data handling.
+  - **Modular codebase** for scalability and reusability.
 
-* Used Mantine `Tabs` component to seperate both tables.
-* When clicking on any tab, the table scroll into view from start. This functionality is implemented through Mantine `useScrollIntoView` hook.
-* Used `lazy loading` to load Crop Data in Home component, So to make sure user does not have to wait for whole data to load at the first visit.
-* Created Pure functions as util functions to get `Crop with Maximum & Minimum Production in that Year` & `Average Yield & Average Cultivation Area of the Crop between 1950-2020`.
-* Created CustomTable with Mantine `Table` component to pass and show data which is returned from util functions.
-* Organize the code for scalibility & reusablity.
-* Used constants for Crop data keys values so that developer does not falls into typo errors while accessing Crop data with CropData interface.
-* Used module css to style components wherever needed.
+- **Data Handling**:
+  - Utilizes pure TypeScript functions to process and display crop data.
+  - Constants are used to manage crop data keys to avoid errors and maintain consistency in data access.
+
+---
 
 ## Tech Stack
 
-* TypeScript
-* React.js 18
-* [Mantine v7](https://mantine.dev/) 
-* Mantine Hooks
+- **TypeScript**: Ensures type safety and better code reliability.
+- **React.js**: The front-end framework used to build the user interface.
+- **Mantine**: A modern UI component library for building responsive components like tables, tabs, and hooks for smooth scrolling.
+- **CSS Modules**: Scoped CSS styling to avoid global conflicts and maintain a clean design.
+
+---
+
+## Demo
+
+You can view the live demo of the application here: [Live Demo](https://dataset-analysis.vercel.app/).
+
+---
+
+## Requirements
+
+Before running the project locally, ensure that the following tools are installed:
+
+- **Node.js**: A JavaScript runtime.
+- **NPM**: Node package manager (comes with Node.js).
+
+---
+
+## How to Run the Project Locally
+
+Follow the steps below to get the application running on your local machine:
+
+1. **Clone the repository**:
+   ```bash
+   git clone [https://github.com/Nishka30/manufac-assignment.git](https://github.com/Nishka30/Dataset-Analysis)
+
