@@ -1,0 +1,44 @@
+/* Main Tabs Container */
+.tabsList {
+    background: #2b2b2b; /* Dark background */
+    position: sticky;
+    top: 0;
+    border-radius: 10px;
+    font-weight: bold;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 12px 20px;
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.15); /* Soft shadow */
+    transition: background-color 0.3s ease;
+    z-index: 10;
+    width: 90%;
+    margin: auto;
+    overflow-x: auto; /* Allow horizontal scrolling if the tabs are too wide */
+}
+
+/* Tab items styling */
+.tabsList > * {
+    padding: 12px 24px;
+    margin: 0 16px;
+    font-size: 18px;
+    border-radius: 10px;
+    cursor: pointer;
+    color: #ffffff; /* White text for readability */
+    transition: background-color 0.1s, transform 0.1s ease-in-out;
+}
+
+/* Hover Effect on Tab */
+.tabsList > *:hover {
+    transform: scale(1.05);
+}
+
+/* Active Tab Styling */
+.tabsList [data-active='true'] {
+    background-color: #ff6f61; /* Vibrant red-orange for active tab */
+    color: #ffffff;
+    border-radius: 10px;
+    transform: scale(1.1);
+    width: 50px; /* Slightly larger active tab */
+    box-shadow: 0px 4px 12px rgba(0, 0, 0, 0.3); /* Enhanced shadow */
+}

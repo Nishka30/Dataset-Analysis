@@ -1,0 +1,22 @@
+/* Style scrollbar */
+::-webkit-scrollbar {
+    width: 7px; /* Width of the scrollbar */
+}
+
+/* Scrollbar track (the empty part of the scrollbar) */
+::-webkit-scrollbar-track {
+    background-color: #333; /* Dark background for the track */
+  
+}
+
+/* Scrollbar thumb (the draggable part of the scrollbar) */
+::-webkit-scrollbar-thumb {
+    background-color: #ff6f61; /* Red color for the thumb */
+    border-radius: 10px;
+    border: 2px solid #333; /* Border around the thumb for contrast */
+}
+
+/* Hover effect on the scrollbar thumb */
+::-webkit-scrollbar-thumb:hover {
+    background-color: #e63e32; /* Darker red on hover */
+}
