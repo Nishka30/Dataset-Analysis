@@ -61,7 +61,11 @@ Follow the steps below to get the application running on your local machine:
 
 1. **Clone the repository**:
    ```bash
-$ git clone https://github.com/Nishka30/Dataset-Analysis
+   git clone [https://github.com/Nishka30/manufac-assignment.git](https://github.com/Nishka30/Dataset-Analysis)
+1. **Run the repository**:
+```terminal
 $ npm i
 $ npm run dev
+```
+
 
